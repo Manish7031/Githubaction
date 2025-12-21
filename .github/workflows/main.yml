@@ -1,0 +1,11 @@
+name: Message Workflow
+
+on: [push]
+
+jobs:
+  print-message-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a custom message
+        run: echo "Hello, this is my custom message!"
+    
